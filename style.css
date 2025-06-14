@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5fbfd;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.waitlist-container {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  max-width: 430px;
+  width: 100%;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Optional: For side-by-side inputs on desktop */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #fafcff;
+  font-family: inherit;
+  margin-bottom: 0.2rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 480px) {
+  .waitlist-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  /* Stack inputs on phones */
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
